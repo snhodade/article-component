@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --dark-grayish-blue: hsl (217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+.flexbox-container{
+    margin-top: 30vh;
+    margin-left: 25vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 40vh;
+    width: 50vw;
+    background-color: white;
+    border-radius: 1rem;
+}
+img{
+    height: 100%;
+    width:20vw;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 0;
+}
+h1{
+
+    text-align: left;
+    
+    padding: 2rem;
+    font-weight: 700;
+}
+p{
+    text-align: left;
+    padding: 0 2rem 0 2rem;
+    line-height: 1.5;
+   letter-spacing: 0.1vmax;
+   font-weight: 500;
+}
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 2rem 0 0 2rem;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.footer > p {
+    margin: 2rem 2rem 0 0;
+}
+.btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 2rem 0 0 6rem;
+    border: none;
+    background-color: var(--Light-Grayish-Blue);
+    pointer-events: visible;
+}
+.icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0.5rem 0 0 0.5rem;
+}
+.btn:hover {
+    background-color: var(--very-dark-grayish-blue);
+    cursor: pointer;
+}
+.btn:hover img {
+    fill: var(--grayish-blue);
+}
+
+.popup {
+    display: none;
+}
+.popup > img {
+height: 20px;
+width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexbox-container{
+
+        height: 80vh;
+        width: 80vw;
+        margin: 5vh auto 5vh;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        height: 100%;
+        width:100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+        padding: 0;
+    }
+    .btn {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: 2rem 0 0 1rem;
+        border: none;
+        background-color: var(--Light-Grayish-Blue);
+        pointer-events: visible;
+    }
+    .icon {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 0.5rem 0 0 0.5rem;
+    }
+    h1 {
+        padding: 1rem;
+    }
+    p{
+        padding-left: 1rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
